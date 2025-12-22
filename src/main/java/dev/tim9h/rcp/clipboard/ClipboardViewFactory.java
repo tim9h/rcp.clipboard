@@ -5,10 +5,10 @@ import java.util.Map;
 
 import com.google.inject.Inject;
 
-import dev.tim9h.rcp.spi.CCard;
-import dev.tim9h.rcp.spi.CCardFactory;
+import dev.tim9h.rcp.spi.Plugin;
+import dev.tim9h.rcp.spi.PluginFactory;
 
-public class ClipboardViewFactory implements CCardFactory {
+public class ClipboardViewFactory implements PluginFactory {
 
 	@Inject
 	private ClipboardView view;
@@ -19,7 +19,7 @@ public class ClipboardViewFactory implements CCardFactory {
 	}
 
 	@Override
-	public CCard createCCard() {
+	public Plugin create() {
 		return view;
 	}
 

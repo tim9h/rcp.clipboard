@@ -14,10 +14,10 @@ import com.google.inject.Inject;
 
 import dev.tim9h.rcp.event.EventManager;
 import dev.tim9h.rcp.logging.InjectLogger;
-import dev.tim9h.rcp.spi.CCard;
 import dev.tim9h.rcp.spi.Mode;
+import dev.tim9h.rcp.spi.Plugin;
 
-public class ClipboardView implements CCard {
+public class ClipboardView implements Plugin {
 
 	@InjectLogger
 	private Logger logger;
