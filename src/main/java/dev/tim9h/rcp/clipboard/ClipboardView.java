@@ -29,7 +29,12 @@ public class ClipboardView implements Plugin {
 	public String getName() {
 		return "Clipboard Interceptor";
 	}
-
+	
+	@Override
+	public String getId() {
+		return "clipboard";
+	}
+	
 	@Override
 	public Optional<List<Mode>> getModes() {
 		return Optional.of(Arrays.asList(new Mode() {
